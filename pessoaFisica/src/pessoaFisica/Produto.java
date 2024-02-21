@@ -1,6 +1,6 @@
 package pessoaFisica;
 /**
- * @autor Heitor Moreira
+ * @autor Andr√© Tomazoni Fatinatti
  * @data 06/02/2024
  * Classe de Modelagem conceitual de Produto
  */
@@ -11,11 +11,11 @@ public class Produto {
 	String descricao;
 	float quantidade;
 	
-	//MÈtodo
+	//M√©todo
 	public void incluir(int id, String nome, float valor) {
-		codigo = id;//atividade de inclus„o
-		descricao = nome;//atividade de inclus„o
-		quantidade = valor;//atividade de inclus„o
+		codigo = id;//atividade de inclus√£o
+		descricao = nome;//atividade de inclus√£o
+		quantidade = valor;//atividade de inclus√£o
 	}
 	
 	
@@ -24,6 +24,6 @@ public class Produto {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Ol· mundo");
+		System.out.println("Ol√° mundo");
 	}
 }
