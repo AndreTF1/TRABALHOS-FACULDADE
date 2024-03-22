@@ -5,7 +5,7 @@ private String placa;
 private String fabricante;
 private String modelo;
 private int anoFabricacao;
-private String valor;
+private float valor;
 private String dataCompra;
 
 public String getPlaca() {
@@ -32,11 +32,11 @@ public void setModelo(String modelo) {
 	this.modelo = modelo;
 	}
 
-public String getValor() {
+public float getValor() {
 	return valor;
 	}
 
-public void setValor(String valor) {
+public void setValor(float valor) {
 	this.valor = valor;
 	}
 
@@ -57,7 +57,7 @@ public int getAnoFabricacao() {
 	return anoFabricacao;
 	}
 public Veiculo(String placa, String modelo,
-		int anoFabricacao, String valor, String fabricante, String dataCompra) {
+		int anoFabricacao, float valor, String fabricante, String dataCompra) {
 	this.placa = placa;
 	this.fabricante = fabricante;
 	this.modelo = modelo;
