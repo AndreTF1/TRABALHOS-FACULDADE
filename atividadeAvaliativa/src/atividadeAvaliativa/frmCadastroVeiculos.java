@@ -136,7 +136,7 @@ public class frmCadastroVeiculos extends JFrame implements ActionListener {
 	
 	public void cadastrar() {
 		vetores[indexdovetor] = new Veiculo(txtPlaca.getText(), txtModelo.getText(),
-				Integer.parseInt(txtAnoFabricacao.getText()), String.valueOf(txtValor.getText()), String.valueOf(selectFabricante.getSelectedItem()),
+				Integer.parseInt(txtAnoFabricacao.getText()), Float.parseFloat(txtValor.getText()), String.valueOf(selectFabricante.getSelectedItem()),
 				String.valueOf(txtDataCompra.getText()));
 		limpar();
 		indexdovetor++;
@@ -179,7 +179,7 @@ public class frmCadastroVeiculos extends JFrame implements ActionListener {
 					
 					veiculo.setModelo(txtModelo.getText());
 					veiculo.setAnoFabricacao(Integer.parseInt(txtAnoFabricacao.getText()));
-					veiculo.setValor(String.valueOf(txtValor.getText()));
+					veiculo.setValor(Float.parseFloat(txtValor.getText()));
 					veiculo.setFabricante(String.valueOf(selectFabricante.getSelectedItem()));
 					veiculo.setDataCompra(String.valueOf(txtDataCompra.getText()));
 					
@@ -210,7 +210,7 @@ public class frmCadastroVeiculos extends JFrame implements ActionListener {
 				if (veiculo.getPlaca().equalsIgnoreCase(placaDigitada)) {
 					veiculo.setModelo("");
 					veiculo.setAnoFabricacao(0);
-					veiculo.setValor("");
+					veiculo.setValor(0);
 					veiculo.setFabricante(null);
 					veiculo.setDataCompra("");
 					
